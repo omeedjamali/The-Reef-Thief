@@ -19,6 +19,6 @@ public class Movement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        
+        rigidBody.MovePosition(rigidBody.position + movement * speed * Time.fixedDeltaTime);
     }
 }
